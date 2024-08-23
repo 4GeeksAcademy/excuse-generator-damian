@@ -6,10 +6,10 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  const who = ["El gato", "Mi mamá", "Mi abuela", "Mi novia"];
-  const action = ["comió", "orinó", "aplastó", "rompió"];
-  const what = ["mi tarea", "mi teléfono", "mi compu"];
-  const when = [
+  const quien = ["El gato", "Mi mamá", "Mi abuela", "Mi novia"];
+  const accion = ["comió", "orinó", "aplastó", "rompió"];
+  const que = ["mi tarea", "mi teléfono", "mi compu"];
+  const cuando = [
     "antes de la clase",
     "cuando yo estaba durmiendo",
     "mientras cocinaba",
@@ -17,12 +17,12 @@ window.onload = function() {
   ];
 
   function getExcuse() {
-    const whoIndex = Math.floor(Math.random() * who.length);
-    const actionIndex = Math.floor(Math.random() * action.length);
-    const whatIndex = Math.floor(Math.random() * what.length);
-    const whenIndex = Math.floor(Math.random() * when.length);
+    const quienIndex = Math.floor(Math.random() * quien.length);
+    const accionIndex = Math.floor(Math.random() * accion.length);
+    const queIndex = Math.floor(Math.random() * que.length);
+    const cuandoIndex = Math.floor(Math.random() * cuando.length);
 
-    return `${who[whoIndex]} ${action[actionIndex]} ${what[whatIndex]} ${when[whenIndex]}`;
+    return `${quien[quienIndex]} ${accion[accionIndex]} ${que[queIndex]} ${cuando[cuandoIndex]}`;
   }
 
   document.getElementById("excuse").innerHTML = getExcuse();
